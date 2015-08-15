@@ -1,0 +1,10 @@
+post_install() {
+  update-desktop-database -q
+
+  cat << EOF
+==> NOTICE: You need BOINC installed with at least one project configured
+
+==> Please take a look at http://wiki.gridcoin.us/Linux_guide#Creating_config_file
+==> to setup your wallet
+EOF
+}
